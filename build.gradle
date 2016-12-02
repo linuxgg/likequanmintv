@@ -7,7 +7,7 @@ buildscript {
 //      maven{ url 'http://maven.oschina.net/content/groups/public/'}
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.1'
+        classpath 'com.android.tools.build:gradle:2.2.2'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
 
@@ -21,6 +21,7 @@ allprojects {
 //       maven{ url 'http://maven.oschina.net/content/groups/public/'}
     }
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

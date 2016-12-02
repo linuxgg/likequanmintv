@@ -7,11 +7,13 @@ android {
     buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "android.marshon.likequanmintv"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -25,7 +27,6 @@ android {
         daoPackage 'android.marshon.likequanmintv.db'
         targetGenDir 'src/main/java'
     }
-
 
 
     sourceSets {
@@ -61,4 +62,5 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
     provided 'com.google.dagger:dagger-compiler:2.2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    dependencies {  compile 'com.google.android:multidex:0.1'}
 }
